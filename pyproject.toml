@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "scraper-ercotreports"
+version = "0.1.0"
+description = "Scraping ERCOT reports"
+authors = ["Christian Jensen (Laptop) <cbucjensen@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+ipykernel = "^6.29.4"
+pandas = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
