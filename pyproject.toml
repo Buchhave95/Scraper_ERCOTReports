@@ -1,15 +1,21 @@
 [tool.poetry]
-name = "scraper-ercotreports"
+name = "scraper_ercotreports"
 version = "0.1.0"
 description = "Scraping ERCOT reports"
 authors = ["Christian Jensen (Laptop) <cbucjensen@gmail.com>"]
 readme = "README.md"
+packages = [{include = "scraper_ercotreports"}]
+
+[[tool.poetry.source]]
+name = "PyPi"
+priority = "primary"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 ipykernel = "^6.29.4"
-pandas = "^2.2.2"
+pandas = "2.2.2"
 
+Utils = {path = "C:/Users/cbucj/Git/Utils"}
 
 [build-system]
 requires = ["poetry-core"]
