@@ -7,11 +7,17 @@ py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.
 echo Downloading 15933
 py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 15933
 
-echo Downloading 16554
-py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 16554
+echo Downloading 13028
+py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 13028
 
-echo Downloading 21812
-py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 21812
+echo Downloading 14787
+py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 14787
+
+echo Downloading 13483
+py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 13483
+
+echo Downloading 21809
+py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 21809
 
 echo Downloading 22912
 py -3.12 -m poetry run .\.venv\Scripts\python.exe Scraper_ERCOTReports\__main__.py -id 22912

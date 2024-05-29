@@ -22,11 +22,11 @@ def run_app(report_id:str):
 
         # Creating folder\file paths
         if not os.path.exists(output_folder): os.mkdir(output_folder)
-        df_log = pd.read_csv(log_file_path) if os.path.exists(log_file_path) else pd.DataFrame(default_variables.DCT_LOG_CONTENT, index = [0])
+        if not os.path.exists(log_file_path): pd.DataFrame(default_variables.DCT_LOG_CONTENT, index = [0]).to_csv(log_file_path, index = False)
 
         # Scraping files
         util_scraper = UtilScraper()
         util_scraper.py_get_html_to_file_requests(report_url, f"{output_folder}\\{report_name}.{dct_report_specs['DataFileFormat']}")
 
         if dct_report_specs['DataFileFormat'].lower() == 'json':
-            hf.download_file_json_format(log_file_path, output_folder, report_name, dct_report_specs, df_log, default_variables, util_scraper)
+            hf.download_file_json_format(log_file_path, output_folder, report_name, dct_report_specs, default_variables, util_scraper)

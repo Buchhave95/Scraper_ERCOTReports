@@ -15,6 +15,7 @@ class ReportsToDownload():
                     'EMILID': 'GEN-55-CD'
                 }
             },
+
             '15933': {
                 'GISReport': {
                     'FileFormat': 'xlsx',
@@ -28,8 +29,9 @@ class ReportsToDownload():
                     'EMILID': 'PG7-200-ER'
                 }
             },
-            '16554': {
-                'IntraHourWindForecastByGeoRegion': {
+
+            '13028': {
+                'WindHourlyActualAndForecast': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
@@ -38,11 +40,12 @@ class ReportsToDownload():
                     'TableName': False,
                     'FileNamePrefix': slice(3, 5),
                     'DataFileFormat': 'json',
-                    'EMILID': 'NP4-751-CD'
+                    'EMILID': 'NP4-732-CD'
                 }
             },
-            '21812': {
-                'IntraHourSolarForecastByGeoRegion': {
+
+            '14787': {
+                'WindHourlyActualAndForecastGeoRegional': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
@@ -51,9 +54,38 @@ class ReportsToDownload():
                     'TableName': False,
                     'FileNamePrefix': slice(3, 5),
                     'DataFileFormat': 'json',
-                    'EMILID': 'NP4-752-CD'
+                    'EMILID': 'NP4-742-CD'
                 }
             },
+
+            '13483': {
+                'SolarHourlyActualAndForecast': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP4-737-CD'
+                }
+            },
+
+            '21809': {
+                'WindHourlyActualAndForecastGeoRegional': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP4-745-CD'
+                }
+            },
+
             '22912': {
                 'UnplannedResourceOutagesReport': {
                     'FileFormat': 'zip',
@@ -78,6 +110,34 @@ class ReportsToDownload():
                     'FileNamePrefix': slice(3, 5),
                     'DataFileFormat': 'json',
                     'EMILID': 'NP3-233-CD'
+                }
+            },
+
+            '12331': {
+                '15MinRTSettlementLMP': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP4-190-CD'
+                }
+            },
+
+            '12301': {
+                'DAMSettlementLMP': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP6-905-CD'
                 }
             },
         }
