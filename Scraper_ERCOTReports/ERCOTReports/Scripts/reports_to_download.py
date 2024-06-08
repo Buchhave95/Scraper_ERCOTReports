@@ -3,7 +3,7 @@ class ReportsToDownload():
     def __init__(self) -> None:
         self.Reports = {
             '13499': {
-                'HourlyRTLoad': {
+                'HourlyRTLoadDALoadCurrentLoadFC': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
@@ -13,6 +13,34 @@ class ReportsToDownload():
                     'FileNamePrefix': slice(3, 5),
                     'DataFileFormat': 'json',
                     'EMILID': 'GEN-55-CD'
+                }
+            },
+
+            '12311': {
+                'HourlySevenDayLoadForecast': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP3-560-CD'
+                }
+            },
+
+            '12315': {
+                'OnLineGenerationResourceCapacity': {
+                    'FileFormat': 'csv',
+                    'DateSlicer': slice(3, 4),
+                    'DateFormat': '',
+                    'UnZipFiles': True,
+                    'ParseData': False,
+                    'TableName': False,
+                    'FileNamePrefix': slice(3, 5),
+                    'DataFileFormat': 'json',
+                    'EMILID': 'NP3-763-CD'
                 }
             },
 
@@ -114,7 +142,7 @@ class ReportsToDownload():
             },
 
             '12331': {
-                '15MinRTSettlementLMP': {
+                'DAMPointSettlementLMP': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
@@ -128,7 +156,7 @@ class ReportsToDownload():
             },
 
             '12301': {
-                'DAMSettlementLMP': {
+                'RTPointSettlementLMP': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
