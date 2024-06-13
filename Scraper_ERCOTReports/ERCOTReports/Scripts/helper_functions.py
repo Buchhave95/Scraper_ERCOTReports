@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import requests
 import datetime as dt
 import pandas as pd
 from zipfile import ZipFile
@@ -56,3 +57,24 @@ def download_file_json_format(log_file_path:str, output_folder:str, report_name:
             'DownloadURL': download_url
         }, index = [0])
         logging.write_log_from_dataframe_csv(log_file_path, df_log, 3)
+
+def get_token_public_api(default_variables) -> str:
+    # Get new token id
+    dct_params = {
+        'username': 'cbucjensen@gmail.com',
+        'password': 'tPkz73d6kX3QkNx',
+        'grant_type': 'password',
+        'scope': "openid+fec253ea-0d06-4272-a5e6-b478baeecd70+offline_access",
+        'client_id': "fec253ea-0d06-4272-a5e6-b478baeecd70",
+        'response_type': 'id_token'
+    }
+    
+    url_token = default_variables.TOKEN_URL + '?'
+    for k in dct_params.keys():
+        url_token += f"{k}={dct_params[k]}&"
+    url_token = url_token[:-1]
+
+    resp = requests.post(url_token)
+    token = resp.json()['id_token']
+
+    return token

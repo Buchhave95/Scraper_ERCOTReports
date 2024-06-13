@@ -12,6 +12,7 @@ def run_app(report_id:str):
 
     for report_name, dct_report_specs in report.items():
         try:
+            # downloader.downloader_archived_files_public_api(default_variables, dct_report_specs, report, report_name, report_id)
             downloader.downloader(default_variables, dct_report_specs, report, report_name, report_id)
         except Exception as err:
             print(str(err))

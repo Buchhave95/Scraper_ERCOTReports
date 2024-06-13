@@ -101,7 +101,7 @@ class ReportsToDownload():
             },
 
             '21809': {
-                'WindHourlyActualAndForecastGeoRegional': {
+                'SolarHourlyActualAndForecastGeoRegional': {
                     'FileFormat': 'csv',
                     'DateSlicer': slice(3, 4),
                     'DateFormat': '',
